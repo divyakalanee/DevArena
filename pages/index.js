@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useState } from "react";
 import { Card, Form, Button, Container, Row } from 'react-bootstrap';
 import styles from "./index.module.css";
+import 'bootstrap/dist/css/bootstrap.css'
 
 export default function Home() {
   const [name, setName] = useState('');
@@ -45,7 +46,7 @@ export default function Home() {
   }
 
   return (
-    <div>
+    <div style={{backgroundColor : '#F7EBF5'}}>
       <Head>
         <title>OpenAI Quickstart</title>
         <link rel="icon" href="/dog.png" />
@@ -112,3 +113,4 @@ export default function Home() {
     </div>
   );
 }
+// document.body.style.backgroundColor = "#F7EBF5";
